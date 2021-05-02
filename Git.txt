@@ -1,0 +1,18 @@
+git init => 깃 사용 시작 //
+(ls -al) : 보이지 않는 파일들 보이게 함 //
+git add => working area에서 staging area로 보냄 / 이것을 삭제하기 위해서는 //
+git rm --cached <File> //
+
+깃 상태를 알기 위해서는 git status //
+
+Repository로 커밋 => git commit -m "commit message" // 
+git log => 커밋의 기록 확인  //
+
+git add와 commit 동시에 하기
+=> git commit -am "commit message"
+(한번이라도 commit을 한 대상에 대해서만 가능) //
+
+로컬 저장소를 원격 저장소와 연결 하기 위해서는
+git remote add origin <URL>
+git branch -M main
+git push -u origin main //
