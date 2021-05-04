@@ -16,3 +16,18 @@ git add와 commit 동시에 하기
 git remote add origin <URL>
 git branch -M main
 git push -u origin main //
+
+원격저장소에 푸쉬한 깃을 수정할 시 총 3가지 옵션이 있다. (git reset)
+- git reset --hard HEAD^ //  working directory, staging area, repository에 있는 것들 삭제
+- git reset --mixed HEAD^ // staging area, repository에 있는 것들 삭제
+- git reset --soft HEAD^ // 오로지 repository에 있는 것들 삭제
+HEAD: 가장 최근 버전에서 , ^: 하나만 되돌림을 의미 // 
+
+git branch 관리방법
+- git branch 명령어 사용시 현재 가지고 있는 브랜치들을 확인할 수 있다.
+- 기본적으로 main 브랜치인데(master -> main으로 바뀜) 새로운 브랜치를 추가하기 위해서는 명령어 
+=> git branch <Name>
+
+-git branch 변경은 git checkout <Name>
+깃을 병합할 때는 '병합의 결과'가 되는 대상에 checkout
+그 후 깃을 합치는 명령어는 git merge <합치려는 branchName>
